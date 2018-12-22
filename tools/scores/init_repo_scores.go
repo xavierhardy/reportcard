@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/gojp/goreportcard/handlers"
+	"github.com/xavierhardy/reportcard/handlers"
 )
 
 const repoBucket = "repos"

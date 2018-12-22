@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/gojp/goreportcard/check"
+	"github.com/xavierhardy/reportcard/check"
 )
 
 func badgePath(grade check.Grade, style string) string {

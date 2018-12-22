@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gojp/goreportcard/check"
+	"github.com/xavierhardy/reportcard/check"
 )
 
 var (

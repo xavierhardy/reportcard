@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/gojp/goreportcard/handlers"
+	"github.com/xavierhardy/reportcard/handlers"
 )
 
 var (
@@ -19,7 +19,7 @@ var (
 )
 
 func deleteRepo(repo string) error {
-	db, err := bolt.Open("goreportcard.db", 0755, &bolt.Options{Timeout: 1 * time.Second})
+	db, err := bolt.Open("reportcard.db", 0755, &bolt.Options{Timeout: 1 * time.Second})
 	if err != nil {
 		return fmt.Errorf("could not open bolt db: %v", err)
 	}
@@ -62,7 +62,7 @@ func deleteRepo(repo string) error {
 }
 
 func listDuplicates() error {
-	db, err := bolt.Open("goreportcard.db", 0755, &bolt.Options{Timeout: 1 * time.Second})
+	db, err := bolt.Open("reportcard.db", 0755, &bolt.Options{Timeout: 1 * time.Second})
 	if err != nil {
 		return fmt.Errorf("could not open bolt db: %v", err)
 	}

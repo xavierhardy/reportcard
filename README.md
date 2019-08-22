@@ -4,6 +4,11 @@
 
 A fork of [Go Report Card](https://github.com/gojp/goreportcard). A web application that generates a report on the quality of an open source project. It uses several measures, including `gofmt`, `go vet`, `go lint` and `gocyclo` for Go projects. The objective is support several programming languages and formats. To get a report on your own project, run `reportcard-cli`.
 
+### Sponsors
+
+<a href="https://www.signalsciences.com/"><img src="https://goreportcard.com/assets/signalsciences.png" height="54" width="260" ></a>
+
+
 ### Installation
 
 Assuming you already have a recent version of Go installed, pull down the code with `go get`:
@@ -22,7 +27,7 @@ make install
 Now run
 
 ```
-make start-dev
+make start
 ```
 
 and you should see
@@ -32,12 +37,6 @@ Running on 127.0.0.1:8000...
 ```
 
 Navigate to that URL in your browser and check that you can see the front page.
-
-When running the site in a production environment, instead of `make start-dev`, run:
-
-```
-make start
-```
 
 ### Command Line Interface
 
@@ -99,4 +98,4 @@ The code is licensed under the permissive Apache v2.0 licence. This means you ca
 
 ### Notes
 
-We don't support this on Windows since we have no way to test it on Windows.
+We don't support Go Report Card on Windows since we have no way to test it on Windows.
